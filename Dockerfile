@@ -1,6 +1,6 @@
 FROM ubuntu:16.04
 
-RUN rm /var/lib/apt/lists/* -vf && apt-get update && apt-get install -y php \
+RUN apt-get update && apt-get install -y php \
 	php-fpm \
 	nginx \
 	php-mysql \
